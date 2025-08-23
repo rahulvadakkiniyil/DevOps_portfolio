@@ -198,8 +198,8 @@ const Projects = () => {
     {
       title: "DevOps Pipeline for Connector Deployment",
       description: "The project focuses on enabling seamless CI/CD workflows for deploying and updating MadConnect’s pre-built connectors, ensuring scalability, security, and observability while maintaining compliance with SOC-2 standards.",
-      tags: ["ECS","AWS","Terraform","CI/CD Pipeline"],
-      website: "https://madconnect.io",
+      tags: ["ECS", "AWS", "Terraform", "CI/CD Pipeline"],
+      website: "https://madconnect.io"
     }
   ];
 
