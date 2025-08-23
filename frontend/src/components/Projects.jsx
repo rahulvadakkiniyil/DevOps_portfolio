@@ -194,7 +194,7 @@ const Projects = () => {
       tags: ["EKS","Nodejs","MongoDB","Reactjs", "Kubernetes", "Helm", "AWS", "Jenkins"],
       github: "https://github.com/rahulvadakkiniyil/three-tire-application-EKS",
       outcomes: "Reduced infrastructure costs by 30% using serverless components,Achieved 99.9% uptime with auto-scaling and load balancing,Improved deployment speed and reliability using CI/CD integration."
-    },
+    }
   ];
 
   return (
