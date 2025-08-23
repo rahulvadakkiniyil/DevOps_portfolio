@@ -195,12 +195,6 @@ const Projects = () => {
       github: "https://github.com/rahulvadakkiniyil/three-tire-application-EKS",
       outcomes: "Reduced infrastructure costs by 30% using serverless components,Achieved 99.9% uptime with auto-scaling and load balancing,Improved deployment speed and reliability using CI/CD integration."
     },
-    {
-      title: "DevOps Pipeline for Connector Deployment",
-      description: "The project focuses on enabling seamless CI/CD workflows for deploying and updating MadConnect’s pre-built connectors, ensuring scalability, security, and observability while maintaining compliance with SOC-2 standards.",
-      tags: ["ECS", "AWS", "Terraform", "CI/CD Pipeline"],
-      website: "https://madconnect.io"
-    }
   ];
 
   return (
