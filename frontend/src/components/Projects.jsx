@@ -210,11 +210,11 @@ const Projects = () => {
       outcomes:"Integrated DevSecOps practices with automated security scanning."
     },
     {
-      title: "Portfolio Website",
-      description: "Modern, responsive portfolio website built with React and styled-components featuring dark mode, project showcase, and contact integration.",
-      tags: ["React", "JavaScript", "CSS", "Bootstrap", "Styled-Components"],
-      website: "https://rahulvadakkiniyil.github.io/portfolio",
-      outcomes: "Fully responsive design with smooth animations and interactive components. Optimized for performance with fast loading times and SEO-friendly structure."
+      title: "CompuSystems – Custom Event Registration Solutions",
+      description: "CompuSystems delivers innovative, flexible, and powerful solutions across online registration, onsite check-in, lead retrieval, event ticketing, attendee acquisition.",
+      tags: ["EC2","ALB","WAF","CloudFront","CloudWatch","RDS","S3","AutoScaling"],
+      website: "compusystems.com",
+      outcomes: "Implemented Devops Pratices and security"
     }
   ];
 
