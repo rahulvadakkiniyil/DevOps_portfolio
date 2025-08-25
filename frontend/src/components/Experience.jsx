@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
 const Experience = () => {
   const experiences = [
@@ -16,8 +16,18 @@ const Experience = () => {
       duration: "7 Months",
       description:
         "Assisted in managing Linux and Windows servers, configuring network setups, handling troubleshooting tasks, and supporting server deployments and maintenance activities.",
+      certificate: "../assests/Rahul Vadakkiniyil- Exp Letter.pdf", // Add your certificate path here
     },
   ];
+
+  const handleDownload = (certificatePath) => {
+    const link = document.createElement("a");
+    link.href = certificatePath;
+    link.setAttribute("download", certificatePath.split("/").pop());
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <div style={{ backgroundColor: "#0d0d0d", minHeight: "100vh", padding: "60px 0" }}>
@@ -75,6 +85,23 @@ const Experience = () => {
                   </h4>
                   <p style={{ color: "#bbb", fontStyle: "italic" }}>{exp.duration}</p>
                   <p style={{ color: "#ccc", lineHeight: "1.7" }}>{exp.description}</p>
+
+                  {/* Download Button for Server Admin Trainee */}
+                  {exp.certificate && (
+                    <Button
+                      variant="info"
+                      style={{
+                        marginTop: "15px",
+                        fontWeight: "600",
+                        borderRadius: "8px",
+                        background: "linear-gradient(90deg, #00b4db, #0083b0)",
+                        border: "none",
+                      }}
+                      onClick={() => handleDownload(exp.certificate)}
+                    >
+                      Download Certificate
+                    </Button>
+                  )}
                 </Card.Body>
               </Card>
             </Col>
