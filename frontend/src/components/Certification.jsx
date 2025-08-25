@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { Container, Row, Col, Card, Button, Badge, Carousel } from 'react-bootstrap';
-import { FaCertificate, FaCalendarAlt, FaExternalLinkAlt, FaAward, FaCheck } from 'react-icons/fa';
+import { FaCertificate, FaCalendarAlt, FaExternalLinkAlt, FaAward, FaCheck, FaRedhat } from 'react-icons/fa';
 import { SiAmazonaws, SiKubernetes, SiDocker, SiJenkins, SiTerraform } from 'react-icons/si';
 import styled from 'styled-components';
 import { ThemeContext } from '../context/ThemeContext';
@@ -226,6 +226,8 @@ const Certifications = () => {
     switch(provider) {
       case 'AWS':
         return <SiAmazonaws />;
+      case 'Redhat':
+        return <FaRedhat />;
       case 'CNCF':
         return <SiKubernetes />;
       case 'Docker':
