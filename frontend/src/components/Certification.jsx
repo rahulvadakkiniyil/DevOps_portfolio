@@ -277,7 +277,7 @@ const Certifications = () => {
         provider: "Redhat",
         description: "Advanced certification covering continuous delivery, automation, monitoring, and security on AWS platform.",
         status: "Completed",
-        date: "Never",
+        date: "September 2025",
         skills: [
           "System Administration Fundamentals",
           "Storage and File System Management",
