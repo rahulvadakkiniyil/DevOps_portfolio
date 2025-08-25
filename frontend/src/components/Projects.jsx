@@ -191,7 +191,7 @@ const Projects = () => {
     {
       title: "Three-Tier App on Kubernetes",
       description: "Deployed a Three tier app on Kubernetes with persistent volumes and service discovery.",
-      tags: ["EKS","Nodejs","MongoDB","Reactjs", "Kubernetes", "Helm", "AWS", "Jenkins"],
+      tags: ["EKS","Nodejs","MongoDB","Reactjs", "Kubernetes", "Helm", "AWS", "Jenkins","ECR"],
       github: "https://github.com/rahulvadakkiniyil/three-tire-application-EKS",
       outcomes: "Reduced infrastructure costs by 30% using serverless components,Achieved 99.9% uptime with auto-scaling and load balancing,Improved deployment speed and reliability using CI/CD integration."
     },
@@ -208,6 +208,12 @@ const Projects = () => {
       tags: ["EKS","Nodejs","MongoDB","Reactjs", "Kubernetes", "Helm", "AWS", "Jenkins","ArgoCD","Grafana","Prometheus"],
       github: "https://github.com/rahulvadakkiniyil/banking-app",
       outcomes:"Integrated DevSecOps practices with automated security scanning."
+    },
+    {
+      title: "CompuSystems – Custom Event Registration Solutions",
+      description: "CompuSystems delivers innovative, flexible, and powerful solutions across online registration, onsite check-in, lead retrieval, event ticketing, attendee acquisition.",
+      tags: ["EC2","ALB","WAF","CloudFront","CloudWatch","RDS","S3","AutoScaling"],
+      website: "compusystems.com"
     }
   ];
 
