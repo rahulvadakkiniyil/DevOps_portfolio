@@ -293,7 +293,7 @@ const Certifications = () => {
     <Container className="section">
       <Row>
         <Col lg={8} className="mx-auto text-center">
-          <h2 className="section-title">Professional Certifications</h2>
+          <h2 className="section-title">Global Certifications</h2>
           <p className="lead mb-5">
             Pursuing industry-recognized certifications to validate DevOps and cloud expertise
           </p>
