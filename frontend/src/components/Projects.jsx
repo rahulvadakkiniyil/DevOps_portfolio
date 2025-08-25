@@ -194,6 +194,13 @@ const Projects = () => {
       tags: ["EKS","Nodejs","MongoDB","Reactjs", "Kubernetes", "Helm", "AWS", "Jenkins"],
       github: "https://github.com/rahulvadakkiniyil/three-tire-application-EKS",
       outcomes: "Reduced infrastructure costs by 30% using serverless components,Achieved 99.9% uptime with auto-scaling and load balancing,Improved deployment speed and reliability using CI/CD integration."
+    },
+    {
+      title: "Three-Tier App on EKS with ArgoCD",
+      description: "Deployed a Three tier app on Kubernetes with persistent volumes and service discovery.",
+      tags: ["EKS","Nodejs","MongoDB","Reactjs", "Kubernetes", "Helm", "AWS", "Jenkins","ArgoCD","Grafana","Prometheus"],
+      github: "https://github.com/rahulvadakkiniyil/wanderlust-mega-project",
+      outcomes: "Reduced infrastructure costs by 30% using serverless components,Achieved 99.9% uptime with auto-scaling and load balancing,Improved deployment speed and reliability using Jenkins integration."
     }
   ];
 
