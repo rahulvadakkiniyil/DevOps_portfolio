@@ -5,6 +5,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Certification from './components/Certification';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 import ScrollReveal from './components/ScrollReveal';
