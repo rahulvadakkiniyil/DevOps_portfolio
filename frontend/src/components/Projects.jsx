@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { Container, Row, Col, Card, Button, Badge, Carousel } from 'react-bootstrap';
-import { FaGithub, FaCode, FaRocket } from 'react-icons/fa';
+import { FaGithub, FaCode, FaRocket, FaExternalLinkAlt } from 'react-icons/fa';
 import styled from 'styled-components';
 import { ThemeContext } from '../context/ThemeContext';
 
@@ -210,10 +210,11 @@ const Projects = () => {
       outcomes:"Integrated DevSecOps practices with automated security scanning."
     },
     {
-      title: "CompuSystems – Custom Event Registration Solutions",
-      description: "CompuSystems delivers innovative, flexible, and powerful solutions across online registration, onsite check-in, lead retrieval, event ticketing, attendee acquisition.",
-      tags: ["EC2","ALB","WAF","CloudFront","CloudWatch","RDS","S3","AutoScaling"],
-      website: "compusystems.com"
+      title: "Portfolio Website",
+      description: "Modern, responsive portfolio website built with React and styled-components featuring dark mode, project showcase, and contact integration.",
+      tags: ["React", "JavaScript", "CSS", "Bootstrap", "Styled-Components"],
+      website: "https://rahulvadakkiniyil.github.io/portfolio",
+      outcomes: "Fully responsive design with smooth animations and interactive components. Optimized for performance with fast loading times and SEO-friendly structure."
     }
   ];
 
@@ -281,7 +282,7 @@ const Projects = () => {
                           <div className="mt-auto text-center">
                             <Button 
                               variant="outline-primary" 
-                              href={project.github} 
+                              href={project.github || project.website} 
                               target="_blank" 
                               rel="noopener noreferrer"
                               size="sm"
@@ -294,7 +295,15 @@ const Projects = () => {
                                 transition: 'all 0.3s ease'
                               }}
                             >
-                              <FaGithub className="me-2" /> View Code
+                              {project.github ? (
+                                <>
+                                  <FaGithub className="me-2" /> View Code
+                                </>
+                              ) : (
+                                <>
+                                  <FaExternalLinkAlt className="me-2" /> Visit Website
+                                </>
+                              )}
                             </Button>
                           </div>
                         </Card.Body>
