@@ -197,11 +197,17 @@ const Projects = () => {
     },
     {
       title: "Three-Tier App on EKS with ArgoCD",
-      description: "Deployed a Three tier app on Kubernetes with persistent volumes and service discovery.",
+      description: "Deployed a Three tier app on Kubernetes with ArgoCD.",
       tags: ["EKS","Nodejs","MongoDB","Reactjs", "Kubernetes", "Helm", "AWS", "Jenkins","ArgoCD","Grafana","Prometheus"],
       github: "https://github.com/rahulvadakkiniyil/wanderlust-mega-project",
       outcomes: "Reduced infrastructure costs by 30% using serverless components,Achieved 99.9% uptime with auto-scaling and load balancing,Improved deployment speed and reliability using Jenkins integration."
-    }
+    },
+    {
+      title: "End-to-End Bank Application Deployment using DevSecOps on AWS EKS",
+      description: "End-to-End Bank Application Deployment using DevSecOps on AWS EKS",
+      tags: ["EKS","Nodejs","MongoDB","Reactjs", "Kubernetes", "Helm", "AWS", "Jenkins","ArgoCD","Grafana","Prometheus"],
+      github: "https://github.com/rahulvadakkiniyil/banking-app"
+    },
   ];
 
   return (
