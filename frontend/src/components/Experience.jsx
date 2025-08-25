@@ -1,62 +1,88 @@
-import { motion } from "framer-motion";
-import { Briefcase } from "lucide-react";
+import React from "react";
+import { Container, Row, Col, Card } from "react-bootstrap";
 
-export default function Experience() {
+const Experience = () => {
   const experiences = [
     {
       role: "DevOps Engineer",
       company: "Honeykode Technologies Private Limited",
       duration: "3 Years",
       description:
-        "Worked on designing, automating, and managing CI/CD pipelines, deploying scalable infrastructure on AWS, implementing monitoring solutions, and maintaining high system availability.",
+        "Worked on automating CI/CD pipelines, deploying scalable infrastructure on AWS, implementing Infrastructure as Code (IaC), containerization using Docker & Kubernetes, and ensuring high system availability with monitoring and logging solutions.",
     },
     {
       role: "Server Administrator Trainee",
-      company: "IPSR Solution Private Limited",
+      company: "IPSR Solutions Ltd",
       duration: "7 Months",
       description:
-        "Assisted in managing Linux and Windows servers, configuring network setups, handling troubleshooting, and supporting deployment activities.",
+        "Assisted in managing Linux and Windows servers, configuring network setups, handling troubleshooting tasks, and supporting server deployments and maintenance activities.",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-6 sm:px-12 lg:px-24">
-      <div className="max-w-3xl mx-auto">
-        <motion.h1
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-4xl font-bold text-gray-800 mb-10 text-center"
-        >
-          Professional Experience
-        </motion.h1>
-
-        <div className="space-y-8">
-          {experiences.map((exp, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="bg-white rounded-2xl shadow-md p-6 border border-gray-100 hover:shadow-lg transition"
+    <div style={{ backgroundColor: "#0d0d0d", minHeight: "100vh", padding: "60px 0" }}>
+      <Container>
+        {/* Section Heading */}
+        <Row>
+          <Col lg={8} className="mx-auto text-center">
+            <h2
+              style={{
+                fontSize: "2.8rem",
+                fontWeight: "700",
+                background: "linear-gradient(90deg, #00b4db, #0083b0)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
             >
-              <div className="flex items-center mb-4">
-                <Briefcase className="text-blue-600 w-6 h-6 mr-3" />
-                <h2 className="text-2xl font-semibold text-gray-800">
-                  {exp.role}
-                </h2>
-              </div>
-              <p className="text-gray-600 text-sm mb-2">{exp.duration}</p>
-              {exp.company && (
-                <p className="text-gray-700 font-medium mb-2">{exp.company}</p>
-              )}
-              <p className="text-gray-600 leading-relaxed">
-                {exp.description}
-              </p>
-            </motion.div>
+              Experience
+            </h2>
+            <p style={{ color: "#bbb", marginTop: "10px", fontSize: "1rem" }}>
+              My professional journey and key contributions in the DevOps and System Administration domains.
+            </p>
+          </Col>
+        </Row>
+
+        {/* Experience Cards */}
+        <Row className="mt-5">
+          {experiences.map((exp, index) => (
+            <Col lg={8} className="mx-auto mb-4" key={index}>
+              <Card
+                className="border-0 shadow-lg"
+                style={{
+                  backgroundColor: "#1a1a1a",
+                  color: "#fff",
+                  borderRadius: "15px",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "scale(1.03)";
+                  e.currentTarget.style.boxShadow = "0 10px 25px rgba(0, 180, 219, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "scale(1)";
+                  e.currentTarget.style.boxShadow = "0 4px 15px rgba(0, 0, 0, 0.5)";
+                }}
+              >
+                <Card.Body className="p-5" style={{ textAlign: "justify" }}>
+                  <h4
+                    style={{
+                      color: "#00b4db",
+                      fontWeight: "700",
+                      marginBottom: "10px",
+                    }}
+                  >
+                    {exp.role}
+                  </h4>
+                  <p style={{ color: "#bbb", fontStyle: "italic" }}>{exp.duration}</p>
+                  <p style={{ color: "#ccc", lineHeight: "1.7" }}>{exp.description}</p>
+                </Card.Body>
+              </Card>
+            </Col>
           ))}
-        </div>
-      </div>
+        </Row>
+      </Container>
     </div>
   );
-}
+};
+
+export default Experience;
