@@ -247,7 +247,7 @@ const Certifications = () => {
       provider: "AWS",
       description: "Validates expertise in designing distributed systems on AWS platform with focus on scalability, security, and cost optimization.",
       status: "Completed",
-      date: "March, 2024",
+      date: "March, 2027",
       skills: [
         "AWS Architecture Design",
         "EC2, VPC, S3, RDS",
@@ -272,6 +272,19 @@ const Certifications = () => {
       ],
       credentialUrl: "https://www.credly.com/badges/9c9c8a95-ecc3-42d3-bfca-708cce963a3a/linked_in_profile"
     },
+    {
+        title: "AWS Knowledge: Amazon EKS",
+        provider: "AWS",
+        description: "Advanced certification covering EKS on AWS platform.",
+        status: "Completed",
+        date: "Never",
+        skills: [
+          "AWS Architecture Design",
+          "AWS EKS, AWS Cloud, Containerization, Kubernetes",
+          "AWS Cloud"
+        ],
+        credentialUrl: "https://www.credly.com/badges/443488a2-fa41-418c-af52-ae4880eaf45b/public_url"
+      },
     {
         title: "RHCSA",
         provider: "Redhat",
