@@ -171,37 +171,43 @@ const Projects = () => {
       title: "Cloud-Native Resource Monitoring App",
       description: "Built a real-time system metrics dashboard using Flask and psutil.",
       tags: ["Kubernetes", "Flask", "Python", "Containerd"],
-      github: "https://github.com/rahulvadakkiniyil/cloud-native-monitoring-app"
+      github: "https://github.com/rahulvadakkiniyil/cloud-native-monitoring-app",
+      outcomes: "Deployed on Kubernetes (KIND) using Containerd; improved setup efficiency by 40% and optimized system responsiveness to 300ms under 100+ concurrent test requests."
     },
     {
       title: "2048 APP",
       description: "Designed and automated a full CI/CD pipeline using Jenkins and GitHub Webhooks.",
       tags: ["Kubernetes", "Helm", "Docker"],
-      github: "https://github.com/rahulvadakkiniyil/2048-app"
+      github: "https://github.com/rahulvadakkiniyil/2048-app",
+      outcomes: "Reduced deployment time by 53% (15min → 7min); maintained 95% build success rate and enabled zero-downtime releases using Docker and Nginx reverse proxy on AWS EC2."
     },
     {
       title: "Two-Tier Flask Web App on Kubernetes",
       description: "Deployed a Flask–MySQL app on Kubernetes with persistent volumes and service discovery.",
       tags: ["Flask", "MySQL", "Kubernetes", "Containerd", "AWS"],
-      github: "https://github.com/rahulvadakkiniyil/two-tier-appication"
+      github: "https://github.com/rahulvadakkiniyil/two-tier-appication",
+      outcomes: "Configured 3 services, 2 PVCs, and horizontal pod autoscaling for scalability and ensured 99.9% uptime through resilient deployment and AWS-based network security."
     },
     {
       title: "Three-Tier App on Kubernetes",
       description: "Deployed a Three tier app on Kubernetes with persistent volumes and service discovery.",
       tags: ["EKS","Nodejs","MongoDB","Reactjs", "Kubernetes", "Helm", "AWS", "Jenkins"],
-      github: "https://github.com/rahulvadakkiniyil/three-tire-application-EKS"
+      github: "https://github.com/rahulvadakkiniyil/three-tire-application-EKS",
+      outcomes: "Reduced infrastructure costs by 30% using serverless components,Achieved 99.9% uptime with auto-scaling and load balancing,Improved deployment speed and reliability using CI/CD integration."
     },
     {
       title: "Three-Tier App on EKS with ArgoCD",
       description: "Deployed a Three tier app on Kubernetes with ArgoCD.",
       tags: ["EKS","Nodejs","MongoDB","Reactjs", "Kubernetes", "Helm", "AWS", "Jenkins","ArgoCD","Grafana","Prometheus"],
-      github: "https://github.com/rahulvadakkiniyil/wanderlust-mega-project"
+      github: "https://github.com/rahulvadakkiniyil/wanderlust-mega-project",
+      outcomes: "Implemented GitOps practices with ArgoCD for automated and continuous deployments.Improved deployment efficiency, enabled version-controlled rollbacks, and enhanced scalability."
     },
     {
       title: "End-to-End Bank Application Deployment using DevSecOps on AWS EKS",
-      description: "End-to-End Bank Application Deployment using DevSecOps on AWS EKS",
+      description: "Designed, implemented, and deployed a secure, scalable, and highly available banking application using AWS EKS with complete DevSecOps integration. Built an automated CI/CD pipeline with security scanning and monitoring to ensure seamless delivery and compliance.",
       tags: ["EKS","Nodejs","MongoDB","Reactjs", "Kubernetes", "Helm", "AWS", "Jenkins","ArgoCD","Grafana","Prometheus"],
-      github: "https://github.com/rahulvadakkiniyil/banking-app"
+      github: "https://github.com/rahulvadakkiniyil/banking-app",
+      outcomes:"Integrated DevSecOps practices with automated security scanning."
     }
   ];
 
