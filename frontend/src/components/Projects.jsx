@@ -213,7 +213,7 @@ const Projects = () => {
       title: "CompuSystems – Custom Event Registration Solutions",
       description: "CompuSystems delivers innovative, flexible, and powerful solutions across online registration, onsite check-in, lead retrieval, event ticketing, attendee acquisition.",
       tags: ["EC2","ALB","WAF","CloudFront","CloudWatch","RDS","S3","AutoScaling"],
-      website: "compusystems.com",
+      website: "https://www.compusystems.com/events/",
       outcomes: "Implemented Devops Pratices and security"
     }
   ];
