@@ -14,6 +14,7 @@ import './styles/themes.css';
 import './styles/animations.css';
 import './styles/coolEffects.css';
 import Certifications from './components/Certification';
+import Experience from './components/Experience';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <main>
           <section id="home" aria-label="Home section"><Home /></section>
           <section id="about" aria-label="About section"><About /></section>
+          <section id="experience" aria-label="Experience section"><Experience /></section>
           <section id="skills" aria-label="Skills section"><Skills /></section>
           <section id="projects" aria-label="Projects section"><Projects /></section>
           <section id="certifications" aria-label="Certifications section"><Certifications /></section>
