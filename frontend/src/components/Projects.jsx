@@ -204,7 +204,7 @@ const Projects = () => {
     },
     {
       title: "End-to-End Bank Application Deployment using DevSecOps on AWS EKS",
-      description: "Designed, implemented, and deployed a secure, scalable, and highly available banking application using AWS EKS with complete DevSecOps integration. Built an automated CI/CD pipeline with security scanning and monitoring to ensure seamless delivery and compliance.",
+      description: "Designed, implemented, and deployed a secure, scalable, and highly available banking application using AWS EKS with complete DevSecOps integration",
       tags: ["EKS","Nodejs","MongoDB","Reactjs", "Kubernetes", "Helm", "AWS", "Jenkins","ArgoCD","Grafana","Prometheus"],
       github: "https://github.com/rahulvadakkiniyil/banking-app",
       outcomes:"Integrated DevSecOps practices with automated security scanning."

@@ -51,7 +51,7 @@ const Resume = () => {
         <Col lg={9} className="mx-auto">
           <PDFFrame
             src={resumeFile}
-            title="Apurva Gargote's Resume"
+            title="Rahul Vadakkiniyil Resume"
           />
         </Col>
       </Row>
