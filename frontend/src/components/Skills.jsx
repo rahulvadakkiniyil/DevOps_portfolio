@@ -4,7 +4,7 @@ import {
   FaJenkins, FaGithub, FaDocker, FaAws, 
   FaTerminal, FaCode, FaLock
 } from 'react-icons/fa';
-import { SiKubernetes, SiTerraform, SiPrometheus, SiGrafana, SiAzuredevops } from 'react-icons/si';
+import { SiKubernetes, SiTerraform, SiPrometheus, SiGrafana, SiAzuredevops, SiJira } from 'react-icons/si';
 import styled from 'styled-components';
 import { ThemeContext } from '../context/ThemeContext';
 
@@ -186,6 +186,12 @@ const Skills = () => {
       skills: [
         { name: "Secret Management", icon: <FaLock /> },
         { name: "IAM", icon: <FaLock /> }
+      ]
+    },
+    {
+      title: "Project Management",
+      skills: [
+        { name: "Jirat", icon: <SiJira /> }
       ]
     }
   ];
