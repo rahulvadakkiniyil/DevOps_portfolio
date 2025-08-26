@@ -5,23 +5,11 @@ import styled from 'styled-components';
 import resumeFile from '../assets/rahulvadakkiniyil.pdf'; // Importing the PDF from assets
 
 const ResumeContainer = styled(Container)`
-  min-height: 100vh;
+  min-height: 60vh;
   padding: 0;
-`;
-
-const PDFFrame = styled.iframe`
-  width: 100%;
-  height: 800px;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  
-  @media (max-width: 768px) {
-    height: 600px;
-  }
-  
-  @media (max-width: 576px) {
-    height: 500px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 const Resume = () => {
@@ -36,8 +24,8 @@ const Resume = () => {
       <Row className="mb-4">
         <Col lg={8} className="mx-auto text-center">
           <Button
-            href={resumeFile} 
-            download="Apurva_Gargote_Resume.pdf"
+            href={resumeFile}
+            download="Rahul_Vadakkiniyil_Resume.pdf"
             variant="primary"
             size="lg"
             className="resume-download-btn"
@@ -46,17 +34,9 @@ const Resume = () => {
           </Button>
         </Col>
       </Row>
-
-      <Row>
-        <Col lg={9} className="mx-auto">
-          <PDFFrame
-            src={resumeFile}
-            title="Rahul Vadakkiniyil Resume"
-          />
-        </Col>
-      </Row>
     </ResumeContainer>
   );
 };
 
 export default Resume;
+
