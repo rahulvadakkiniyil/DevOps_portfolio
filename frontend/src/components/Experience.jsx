@@ -1,17 +1,16 @@
 import React from 'react';
-import { Briefcase, Calendar, MapPin, Award, Code, Server, Users, TrendingUp, ExternalLink, Building } from 'lucide-react';
 
 const Experience = () => {
   const experienceData = [
     {
       id: 1,
-      title: "DevOps Engineer",
-      company: "Honeykode Technologies Private Limted",
-      location: "Trivandrum, India",
-      duration: "May 2022 - Present",
+      title: "Senior DevOps Engineer",
+      company: "TechCorp Solutions",
+      location: "Bangalore, India",
+      duration: "Jan 2023 - Present",
       type: "Full-time",
       status: "Current",
-      description: "Leading DevOps initiatives for cloud-native applications serving users. Architecting and implementing scalable CI/CD pipelines, managing Kubernetes clusters, and driving automation across development workflows.",
+      description: "Leading DevOps initiatives for cloud-native applications serving 2M+ users. Architecting and implementing scalable CI/CD pipelines, managing Kubernetes clusters, and driving automation across development workflows.",
       responsibilities: [
         "Designed and implemented CI/CD pipelines using Jenkins, GitLab CI, reducing deployment time by 70%",
         "Managed production Kubernetes clusters with 100+ microservices across AWS and Azure",
@@ -81,31 +80,32 @@ const Experience = () => {
         }
       ]
     }
+
   ];
 
   const experienceStats = [
     {
       label: "Years of Experience",
       value: "3+",
-      icon: <Calendar className="w-6 h-6" />,
+      icon: "📅",
       color: "text-blue-600"
     },
     {
       label: "Projects Delivered",
       value: "5+",
-      icon: <Code className="w-6 h-6" />,
+      icon: "💻",
       color: "text-green-600"
     },
     {
       label: "Team Members Mentored",
       value: "8",
-      icon: <Users className="w-6 h-6" />,
+      icon: "👥",
       color: "text-purple-600"
     },
     {
       label: "Infrastructure Cost Saved",
       value: "$100K+",
-      icon: <TrendingUp className="w-6 h-6" />,
+      icon: "📈",
       color: "text-yellow-600"
     }
   ];
@@ -116,7 +116,7 @@ const Experience = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-6">
-            <Briefcase className="w-10 h-10 text-blue-600 mr-4" />
+            <span className="text-4xl mr-4">💼</span>
             <h2 className="text-5xl font-bold text-white">
               Professional Experience
             </h2>
@@ -134,7 +134,7 @@ const Experience = () => {
               key={index}
               className="bg-gray-900 rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
-              <div className={`${stat.color} mb-4 flex justify-center`}>
+              <div className={`${stat.color} mb-4 flex justify-center text-2xl`}>
                 {stat.icon}
               </div>
               <div className="text-3xl font-bold text-white mb-2">
@@ -173,22 +173,22 @@ const Experience = () => {
                       {job.title}
                     </h3>
                     <div className="flex items-center text-xl text-blue-400 font-semibold mb-4">
-                      <Building className="w-5 h-5 mr-2" />
+                      <span className="text-lg mr-2">🏢</span>
                       {job.company}
                     </div>
                   </div>
 
                   <div className="grid md:grid-cols-3 gap-4 text-gray-300">
                     <div className="flex items-center">
-                      <MapPin className="w-5 h-5 mr-3 text-red-600" />
+                      <span className="text-red-500 mr-3">📍</span>
                       <span>{job.location}</span>
                     </div>
                     <div className="flex items-center">
-                      <Calendar className="w-5 h-5 mr-3 text-green-600" />
+                      <span className="text-green-500 mr-3">📅</span>
                       <span>{job.duration}</span>
                     </div>
                     <div className="flex items-center">
-                      <Briefcase className="w-5 h-5 mr-3 text-purple-600" />
+                      <span className="text-purple-500 mr-3">💼</span>
                       <span className="font-medium">{job.type}</span>
                     </div>
                   </div>
@@ -204,7 +204,7 @@ const Experience = () => {
                   {/* Left Column - Responsibilities */}
                   <div>
                     <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
-                      <Server className="w-5 h-5 mr-3 text-blue-600" />
+                      <span className="text-blue-500 mr-3">⚙️</span>
                       Key Responsibilities
                     </h4>
                     <div className="space-y-3">
@@ -222,13 +222,13 @@ const Experience = () => {
                   {/* Right Column - Achievements */}
                   <div>
                     <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
-                      <Award className="w-5 h-5 mr-3 text-yellow-600" />
+                      <span className="text-yellow-500 mr-3">🏆</span>
                       Key Achievements
                     </h4>
                     <div className="space-y-3 mb-6">
                       {job.achievements.map((achievement, idx) => (
                         <div key={idx} className="flex items-start p-3 bg-gray-800 rounded-lg">
-                          <Award className="w-4 h-4 text-yellow-600 mr-3 mt-0.5 flex-shrink-0" />
+                          <span className="text-yellow-500 mr-3 mt-0.5">🏅</span>
                           <span className="text-gray-300 text-sm">
                             {achievement}
                           </span>
@@ -238,7 +238,7 @@ const Experience = () => {
 
                     {/* Notable Projects */}
                     <h5 className="text-lg font-semibold text-white mb-3 flex items-center">
-                      <ExternalLink className="w-4 h-4 mr-2 text-green-600" />
+                      <span className="text-green-500 mr-2">🚀</span>
                       Notable Projects
                     </h5>
                     <div className="space-y-3">
@@ -259,7 +259,7 @@ const Experience = () => {
                 {/* Technologies Used */}
                 <div className="border-t border-gray-700 pt-6">
                   <h4 className="text-lg font-semibold text-white mb-4 flex items-center">
-                    <Code className="w-5 h-5 mr-3 text-purple-600" />
+                    <span className="text-purple-500 mr-3">💻</span>
                     Technologies & Tools
                   </h4>
                   <div className="flex flex-wrap gap-2">
