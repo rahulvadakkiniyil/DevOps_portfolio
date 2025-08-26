@@ -137,6 +137,13 @@ const Skills = () => {
 
   const skillCategories = [
     {
+      title: "Cloud Platforms",
+      skills: [
+        { name: "AWS", icon: <FaAws /> },
+        { name: "Azure", icon: <SiAzuredevops />}
+      ]
+    },
+    {
       title: "CI/CD",
       skills: [
         { name: "Jenkins", icon: <FaJenkins /> },
@@ -157,13 +164,6 @@ const Skills = () => {
       skills: [
         { name: "Terraform", icon: <SiTerraform /> },
         { name: "CloudFormation", icon: <FaAws /> },
-      ]
-    },
-    {
-      title: "Cloud Platforms",
-      skills: [
-        { name: "AWS", icon: <FaAws /> },
-        { name: "Azure", icon: <SiAzuredevops />}
       ]
     },
     {
