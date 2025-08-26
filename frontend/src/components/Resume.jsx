@@ -9,11 +9,11 @@ const ResumeContainer = styled(Container)`
   padding: 0;
 `;
 
-//const PDFFrame = styled.iframe`
- // width: 100%;
-  //height: 800px;
-  //border: 1px solid var(--border-color);
-  //border-radius: 8px;
+const PDFFrame = styled.iframe`
+  width: 100%;
+  height: 800px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
   
   @media (max-width: 768px) {
     height: 600px;
@@ -44,6 +44,15 @@ const Resume = () => {
           >
             <FaDownload className="me-2" /> Download Resume
           </Button>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col lg={9} className="mx-auto">
+          <PDFFrame
+            src={resumeFile}
+            title="Rahul Vadakkiniyil Resume"
+          />
         </Col>
       </Row>
     </ResumeContainer>
