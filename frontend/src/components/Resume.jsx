@@ -46,15 +46,6 @@ const Resume = () => {
           </Button>
         </Col>
       </Row>
-
-      <Row>
-        <Col lg={9} className="mx-auto">
-          <PDFFrame
-            src={resumeFile}
-            title="Rahul Vadakkiniyil Resume"
-          />
-        </Col>
-      </Row>
     </ResumeContainer>
   );
 };
