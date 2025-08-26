@@ -4,7 +4,7 @@ import {
   FaJenkins, FaGithub, FaDocker, FaAws, 
   FaTerminal, FaCode, FaLock
 } from 'react-icons/fa';
-import { SiKubernetes, SiTerraform, SiPrometheus, SiGrafana, SiAzuredevops, SiJira } from 'react-icons/si';
+import { SiKubernetes, SiTerraform, SiPrometheus, SiGrafana, SiAzuredevops, SiJira, SiMongodb, SiPostgresql, SiMysql } from 'react-icons/si';
 import styled from 'styled-components';
 import { ThemeContext } from '../context/ThemeContext';
 
@@ -191,7 +191,15 @@ const Skills = () => {
     {
       title: "Project Management",
       skills: [
-        { name: "Jirat", icon: <SiJira /> }
+        { name: "Jira", icon: <SiJira /> }
+      ]
+    },
+    {
+      title: "Database",
+      skills: [
+        { name: "PostgreSQL", icon: <SiPostgresql /> },
+        { name: "MySQL", icon: <SiMysql /> },
+        { name: "MongoDB", icon: <SiMongodb /> }
       ]
     }
   ];
