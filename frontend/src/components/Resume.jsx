@@ -25,7 +25,7 @@ const Resume = () => {
         <Col lg={8} className="mx-auto text-center">
           <Button
             href={resumeFile}
-            download="Rahul_Vadakkiniyil_Resume.pdf"
+            download="Rahul_Vadakkiniyil.pdf"
             variant="primary"
             size="lg"
             className="resume-download-btn"
