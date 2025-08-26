@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import expCert from "../../public/certification/Rahul Vadakkiniyil.pdf";
 
 const Experience = () => {
   const experiences = [
@@ -17,7 +16,7 @@ const Experience = () => {
       duration: "7 Months",
       description:
         "Assisted in managing Linux and Windows servers, configuring network setups, handling troubleshooting tasks, and supporting server deployments and maintenance activities.",
-      certificate: expCert, // Add your certificate path here
+      certificate: "/certification/Rahul Vadakkiniyil.pdf", // Add your certificate path here
     },
   ];
 
