@@ -16,7 +16,7 @@ const Experience = () => {
       duration: "7 Months",
       description:
         "Assisted in managing Linux and Windows servers, configuring network setups, handling troubleshooting tasks, and supporting server deployments and maintenance activities.",
-      certificate: "/certification/Rahul Vadakkiniyil- Exp Letter.pdf", // Add your certificate path here
+      certificate: "/certification/Rahul Vadakkiniyil.pdf", // Add your certificate path here
     },
   ];
 
