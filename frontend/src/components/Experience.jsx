@@ -13,7 +13,7 @@ const Experience = () => {
     {
       role: "Server Administrator Trainee",
       company: "IPSR Solutions Ltd",
-      duration: "7 Months",
+      duration: "6 Months",
       description:
         "Assisted in managing Linux and Windows servers, configuring network setups, handling troubleshooting tasks, and supporting server deployments and maintenance activities.",
       certificate: "/certification/Rahul Vadakkiniyil.pdf", // Add your certificate path here

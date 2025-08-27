@@ -198,7 +198,7 @@ const Projects = () => {
     {
       title: "DevOps End to Project",
       description: "Deployed a Three tier app on Kubernetes with ArgoCD.",
-      tags: ["EKS", "Kubernetes", "Helm", "AWS", "Jenkins","ArgoCD","Grafana","Prometheus", "GitHub", "Redis", "OWASP", "Trivy", "SnoarQube"],
+      tags: ["EKS", "Kubernetes", "Helm", "AWS", "Jenkins","ArgoCD","Grafana","Prometheus", "GitHub", "Redis", "OWASP", "Trivy", "SonarQube"],
       github: "https://github.com/rahulvadakkiniyil/wanderlust-mega-project",
       outcomes: "Implemented GitOps practices with ArgoCD for automated and continuous deployments.Improved deployment efficiency, enabled version-controlled rollbacks, and enhanced scalability."
     },
@@ -215,6 +215,20 @@ const Projects = () => {
       tags: ["EC2","ALB","WAF","CloudFront","CloudWatch","RDS","S3","AutoScaling"],
       website: "https://www.compusystems.com/events/",
       outcomes: "Implemented Devops Pratices and security"
+    },
+    {
+      title: "Magnum Photos",
+      description: "Magnum Photos is a high-traffic, media-heavy platform showcasing photography, news, e-commerce, and events. For a DevOps engineer, this implies scalability, performance optimization, CI/CD automation, observability, and security are top priorities.",
+      tags: ["EC2","ALB","WAF","AutoScaling","RDS","S3","CI/CD","ECS","CloudWatch"],
+      website: "https://www.magnumphotos.com/",
+      outcomes: "Security & Compliance"
+    },
+    {
+      title: "DCSGOPAY",
+      description: "DCSGoPay is a fintech middleware payment gateway delivering unified API integration across diverse services—bill payments, gift cards, prepaid debit operations, and more.",
+      tags: ["EC2","ALB","WAF","AutoScaling","RDS","S3","CI/CD","EKS","API Gateway","Docker","Kubernetes","Terraform","CloudWatch"],
+      website: "https://dcsgopay.com/",
+      outcomes: "Operational observability, security, and compliance baked into service delivery"
     }
   ];
 
