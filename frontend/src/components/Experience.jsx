@@ -8,7 +8,7 @@ const Experience = () => {
       company: "Honeykode Technologies Private Limited",
       duration: "3 Years",
       description:
-        "Worked on automating CI/CD pipelines, deploying scalable infrastructure on AWS, implementing Infrastructure as Code (IaC), containerization using Docker & Kubernetes, and ensuring high system availability with monitoring and logging solutions.",
+        "Worked on automating CI/CD pipelines, deploying scalable infrastructure on AWS & Azure, implementing Infrastructure as Code (IaC) using Terraforma and CloudFormation, Containerization using Docker & Kubernetes, and ensuring high system availability with monitoring and logging solutions.",
     },
     {
       role: "Server Administrator Trainee",
