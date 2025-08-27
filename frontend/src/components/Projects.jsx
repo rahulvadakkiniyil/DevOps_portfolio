@@ -198,7 +198,7 @@ const Projects = () => {
     {
       title: "DevOps End to Project",
       description: "Deployed a Three tier app on Kubernetes with ArgoCD.",
-      tags: ["EKS", "Kubernetes", "Helm", "AWS", "Jenkins","ArgoCD","Grafana","Prometheus", "GitHub", "Redis", "OWASP", "Trivy", "SonarQube"],
+      tags: ["EKS", "Kubernetes", "Helm", "AWS", "Jenkins","ArgoCD","Grafana","Prometheus", "GitHub", "Redis", "OWASP", "Trivy", "SonarQube","GitOps"],
       github: "https://github.com/rahulvadakkiniyil/wanderlust-mega-project",
       outcomes: "Implemented GitOps practices with ArgoCD for automated and continuous deployments.Improved deployment efficiency, enabled version-controlled rollbacks, and enhanced scalability."
     },
@@ -218,7 +218,7 @@ const Projects = () => {
     },
     {
       title: "Magnum Photos",
-      description: "Magnum Photos is a high-traffic, media-heavy platform showcasing photography, news, e-commerce, and events. For a DevOps engineer, this implies scalability, performance optimization, CI/CD automation, observability, and security are top priorities.",
+      description: "Magnum Photos is a high-traffic, media-heavy platform showcasing photography, news, e-commerce, and events.",
       tags: ["EC2","ALB","WAF","AutoScaling","RDS","S3","CI/CD","ECS","CloudWatch"],
       website: "https://www.magnumphotos.com/",
       outcomes: "Security & Compliance"
